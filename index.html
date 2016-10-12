@@ -24,8 +24,117 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+				<h2> $\nu=5/2$ and the PH-Pfaffian  </h2>
+				<div> Philip Zucker, Dima Feldman </div>
+				<div> Brown University </div>
+				Ref: Phys. Rev. Lett. 117, 096802
+				</section>
+
+				<section>
+				<h2> A Mess of States </h2>
+				<table>
+					<tr>
+
+						<th>  </th> <th> g </th> <th> $$e^*$$ </th> <th> Non-Abelian? </th>
+					</tr>
+					<tr>
+						<td> Pfaffian </td> <td> 1/8 </td> <td> e/4 </td> <td> Yes </td>
+					</tr>
+					<tr>
+						<td> 331 </td> <td> 3/8 </td> <td> e/4 </td> <td> No </td>
+					</tr>
+
+					<tr>
+						<td> 113 </td> <td> ~3/8 </td> <td> e/4 </td> <td> No </td>
+					</tr>
+					<tr>
+						<td> $$\overline{Pfaffian}$$ </td> <td> 1/2 </td> <td> e/4 </td> <td> Yes </td>
+					</tr>
+					<tr>
+						<td> K=8 </td> <td> 1/8 </td> <td> e/4 </td> <td> No </td>
+					</tr>
+					<tr>
+						<td> $$SU(2)_2$$ </td> <td>  1/2</td> <td> e/4 </td> <td> Yes </td>
+					</tr>
+					<tr opacity="0.5">
+					<div opacity="0.5">
+						<td> $$\overline{SU(2)_2}$$ </td> <td>  1/2</td> <td> e/4 </td> <td> Yes </td>
+						</div>
+					</tr>
+
+
+
+				</table>
+				... and more
+
+				</section>
+
+				<section>
+					<ul>
+					<li>
+					Tunneling: $G \sim T^{2g-2}$
+					</li>
+					Dissipation, coulomb interaction, edge reconstruction, raise effective g.
+					Takeaway: Lower bound of g is .
+					<li> Upstream Neutral Mode </li>
+					<li> Charge measurement </li>
+					<li> Interferometry </li>
+					<li> Numerics </li>
+
+
+				</section>
+					<section>
+
+					A new state: PH-Pfaffian <br>
+					Mentionined in D.T. Son  https://arxiv.org/abs/1502.03446<br>
+					Thermal and Electric Hall Conductance restrict Edge theory 
+					<!--One downstream charged bosonic mode, one upstream neutral majorana mode -->
+					$$ L = -\frac{2}{4\pi} [\partial_t \phi \partial_x \phi + v_c (\partial_x \phi)^2 ]+ i\psi (\partial_t-v_n \partial_x) \psi $$
+					$\psi(\{z_i\}) \approx Pf(\frac {1}{\bar{z}_i - \bar{z}_j}) \prod_{i < j} (z_i-z_j)^2 $
+				</section>
+				<!--
+				<section>
+					Thermal And Hall Conductance
+					Both are topological properties
+					<ul>
+					<li> Hall conductance restricts Bosonic Charged Mode </li>
+					<li> Thermal k $\sim$  $\frac{\pi^2 k_B^2 T}{3h} $  $\sum$ # Bosons + $\frac{1}{2}\sum$ #Majorana </li>
+					</ul>
+
+				</section>
+
+				<section>
+					PH-conjugation
+					$$\nu \rightarrow 1- \nu$$ 
+					$$k \rightarrow \frac{\pi^2 k_B^2 T}{3h} - k$$
+					PH-Symmetry requires
+					$$\nu =1/2$$ 
+					$$ k = \frac{\pi^2 k_B^2 T}{6h}$$ 
+					
+
+
+				</section>
+				-->
+
+				<section>
+
+				Experimental Signatures:
+				Fabry-Perot - Indistinguishable from Pf
+				Mach-Zehnder:
+				Current - No dependence on flux
+				Noise - High dependence on flux
+
+				</section>
+
+				<section>
+
+
+				</section>
+
+
+
+
 			</div>
 		</div>
 
@@ -36,12 +145,16 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-
+				    math: {
+        mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+    			},
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
