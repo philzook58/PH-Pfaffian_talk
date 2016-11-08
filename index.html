@@ -25,12 +25,262 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
+				<!-- Not a good title -->
 				<h2> $\nu=5/2$ and the PH-Pfaffian  </h2>
 				<div> Philip Zucker, Dima Feldman </div>
 				<div> Brown University </div>
 				Ref: Phys. Rev. Lett. 117, 096802
 				</section>
 
+				<!-- Fluff pandering to Wiezmann or talking about brown -->
+				<section> 
+				<section>
+				<h2> The Classical Hall Effect </h2>
+				$$I_x = \sigma_{xy} V_y$$
+				Drude Model + Lorentz Force $qv\times B$
+
+				<!--Classical Cyclotron Motion-->
+
+				<aside class="notes"> 2D is an interesting place for conductivity </aside>
+
+				<br>
+				<img src="images/hall-effect.png">
+				</section>
+
+
+				<section>
+				<h2> Add in Quantum Mechanics </h2>
+				 
+				 <!--$$\frac{mv^2}{R}=qvB$$
+				 $$m\omega^2 R =q\omega R B$$ -->
+				 
+				 Cyclotron orbit $\approx$ N de Brogile wavelengths <br>
+				 <!-- $$\frac{1}{2} m \omega^2 R^2= \frac{1}{2}\hbar \omega$$ -->
+				 <br>
+				 Landau Levels
+				 $$ E= (n+\frac{1}{2})\hbar\omega_c = (n+\frac{1}{2})\hbar\frac{qB}{m}$$
+				 <br>
+				 <aside class="notes">
+				 Alternatively 1 orbit encloses n flux quantum
+				 $$ \phi_0 = \frac{hc}{e} $$
+				 </aside>
+
+				 <!--
+				 $$p=h/\lambda$$
+				 $$ 2\pi r = n\lambda$$
+				 Landau Levels
+				 -->
+				 <br>
+				 <img src = "images/de_broglie.jpg">
+				 </section>
+
+				<section>
+				<h2> The Quantum Hall Effect </h2>
+				$ \phi_0 = \frac{hc}{e} $,
+				$ \nu = \frac{n} {\phi/\phi_0} $
+				$$ I_x = \frac{\nu e^2}{h} V_y$$
+				<aside class="notes">
+				
+				Klitzing
+				
+				filling factor is ratio of electron density to flux quanta
+				Measurement of fundamental constants
+				Perfectly Quantized Plateaus at integer and fractional $\nu$
+
+
+				</aside>
+
+				<!--<img src="images/klitzing.jpg"> -->
+				<img src="images/qhe_nobel.gif">
+				</section>
+
+
+				 </section>	
+
+
+
+
+
+
+				 <!-- ahaornov Bohm Effect -->
+				 <!-- laughlin argument for e/m -->
+				 <section>
+				 <section>
+				 <h2> Laughlin State </h2>
+				 
+				 $$z= \frac{x+iy}{l_B}$$
+				 <!-- $$ l_B = \sqrt{\frac{\hbar c}{Be}} \approx 25nm/\sqrt{B}$$  -->
+				 $$ \psi_m = \prod_{i &lt j} (z_i-z_j)^m e^{-\frac{1}{4} \sum_i|z_i|^2} $$
+				 $\nu = \frac{1}{m}$,  m odd
+
+
+				 <aside class="notes">
+				 By using the holomporhic formalism any polynomial of z is good.
+				 The laughlin state is antisymmettric by contrcuting due to odd m
+				 Higher powers of zero in relative cooridnates suppresses being close to each other.
+				 The hole wavefunction is beautiful. It is a parametized class of electron wavefunctions.
+				 In a sense \zeta means nothing. is merely a place of abscene of 
+				 It is also what would appear if a point flux of 2pi was inserted, then the laughin state would turn into this
+
+				 </aside>
+
+				 </section>
+				 <section>
+				 <h2>Quasiholes </h2>
+				 $$ \psi_m = \prod_{i} (\zeta-z_i) \prod_{i &lt j} (z_i-z_j)^m e^{-\frac{1}{4} \sum_i|z_i|^2} $$
+				 Quasiparticle charge: $\frac{e}{m}$ <br>
+				 Anyonic statistics
+
+				 <!-- Quasiparticle Statistics: $e^{i\frac {\pi}{3}}$ -->
+				 	
+
+				 </section>
+				 </section>
+
+				  <section>
+				  <h2> Anyons</h2>
+				 	
+				 	Fermions $\psi(x_1,x_2) = -\psi(x_2,x_1)$ <br>
+				 	Bosons $\psi(x_1,x_2) = \psi(x_2,x_1)$
+				 	<img src="images/anyons.jpg">
+				 	<!-- https://www.researchgate.net/publication/1886720_Why_should_anyone_care_about_computing_with_anyons/figures -->
+
+				 	<aside class="notes">
+				 	Anyons are
+				 	The indistuishability of particles is a wonderful thing.
+				 	From the persoective of a field theory, it is not unobvious. Modes are interachngables
+				 	WHy bosons and fermions? Not obivous. Experiment (aufbau principle ), and then eventually spin-statistics theorem.
+
+
+				 	In 2+1 dimensions, The paths of particles can get tangled up on each other.
+				 	3 dimensions is very important. Only place where knots happen. 
+
+				 	The multi-valued wavefunction is a spritiually correct
+				 	Non abelian get extra degrees of freedom spread amongts the particles
+				 	Histories may not be independant
+
+				 	</aside>
+
+				 </section>
+
+				 <section>
+				 <section>
+				<h2> Composite Fermions </h2> 
+				Flux attachment to electrons
+				$$ \psi_m = \prod_{i &lt j} (z_i-z_j)  \prod_{i &lt j} (z_i-z_j)^m $$
+				<div style="background:white">
+				<img src="images/composite.svg" background="white">
+				Electrons in new effective B field
+				</div>
+				
+				<aside class="notes">
+				Fix all electrons except 1 and the others are vortices.
+				Mean field magnetic field
+				fermions in new effective magnetic field.
+				Energy gap fit
+				have to absorb even number of flux to stay fermions
+				</aside>
+				</section>
+				<section>
+					
+					<img src="images/cmposite_fermion_dips.png">
+				</section>
+
+
+
+				</section>
+
+				 <section>
+				 	$$\nu = 5/2$$
+				 	Even denominator surprise <br>
+				 	1987 Willett et. al. <br>
+				 	
+				 	<img src="images/qhe52.jpg"> <br>
+				 	What is the wavefunction?
+
+				 	<aside class="notes">
+				 		fermion = odd denominator<br>
+				 	</aside>
+
+				 </section>
+
+				 
+
+				 <section>
+				 <section>
+				 <h2> Pfaffian </h2>
+				 Cooper pairing wavefunction <br>
+				 $$ \psi =\text{Pf} (\frac{1}{z_i-z_j}) \prod_{i &lt j} (z_i-z_j)^2 e^{-\frac{1}{4} \sum_i|z_i|^2} $$
+				 Supports Ising Non-Abelian Anyons
+
+				 
+				 </section>
+
+				 <section>
+				 		<h2> Edge Thoery of Pfaffian</h2>
+					$$ L = -\frac{2}{4\pi} [\partial_t \phi \partial_x \phi + v_c (\partial_x \phi)^2 ]+ i\psi (\partial_t+v_n \partial_x) \psi $$
+				 </section>
+
+				 <section>
+				 <h2> Quasiholes </h2>
+				  $$ \psi = \prod_i (\zeta-z_i)\text{Pf} (\frac{1}{z_i-z_j}) \prod_{i &lt j} (z_i-z_j)^2 e^{-\frac{1}{4} \sum_i|z_i|^2} $$
+				 $$ \psi = \text{Pf} (\frac{(\zeta_1-z_i)(\zeta_2-z_j)+(\zeta_1-z_j)(\zeta_2-z_i)}{z_i-z_j}) \prod_{i &lt j} (z_i-z_j)^2 e^{-\frac{1}{4} \sum_i|z_i|^2} $$
+				 4-quasiholes can be fused in only 2 linearly independent ways <br>
+				 <aside class="notes"> Is this the only option </aside>
+				 </section>
+				 
+
+				 </section>
+
+
+
+
+				 <!--
+
+				 </section>
+				 <section>
+				 Pfaffian and Wavefunction games
+				 quasiholes
+				 half vortices
+
+				 BCS wavefunction 
+				 $$\psi(x_1,x_2) = -\psi(x_2,x_1)$$
+				 $$ \Psi = \mathcal{A} [\psi(x_1,x_2) \psi(x_3,x_4) \psi(x_5,x_6) ...] $$
+				 Majorana modes (zero energy states)
+				 Antisymmetric sum
+
+				 $$ \psi =\text{Pf} (\frac{1}{z_i-z_j}) \prod_{i &lt j} (z_i-z_j)^2 e^{-\frac{1}{4} \sum_i|z_i|^2} $$
+				 </section>
+				 <section>
+				 Hole
+
+				 $$ \psi = \prod_i (\zeta-z_i)\text{Pf} (\frac{1}{z_i-z_j}) \prod_{i &lt j} (z_i-z_j)^2 e^{-\frac{1}{4} \sum_i|z_i|^2} $$
+				 An Interesting Twist: Bring inside the pfaffian factor
+				 $$ \psi = \text{Pf} (\frac{(\zeta-z_i)(\zeta-z_j)}{z_i-z_j}) \prod_{i &lt j} (z_i-z_j)^2 e^{-\frac{1}{4} \sum_i|z_i|^2} $$
+
+				 $$ \psi = \text{Pf} (\frac{(\zeta_1-z_i)(\zeta_2-z_j)+(\zeta_1-z_j)(\zeta_2-z_i)}{z_i-z_j}) \prod_{i &lt j} (z_i-z_j)^2 e^{-\frac{1}{4} \sum_i|z_i|^2} $$
+
+				 </section>
+
+				 <section>
+				 4 quasiholes
+				 Nayak
+
+				 </section>
+
+				 <section>
+				 Unpaired electrons
+
+				 </section>
+
+
+				 </section>
+				 -->
+
+
+
+
+				 <!-- Maybe here is a good point for a joke? Like a garbage physics groaner -->
 				<section>
 				<h2> A Mess of States </h2>
 				<table>
@@ -67,6 +317,7 @@
 
 				</table>
 				... and more
+				<aside class="notes"> Mention that 113 is top contedner in list </aside>
 
 				</section>
 
@@ -79,55 +330,228 @@
 					<!--Dissipation, coulomb interaction, edge reconstruction, raise effective g.
 					Takeaway: Lower bound of g is . -->
 					<li> Upstream Neutral Mode </li>
-					<li> Charge measurement </li>
+					<li> Charge of Excitations e/4</li>
 					<li> Interferometry </li>
 					<li> Numerics </li>
+					A lot of key evidence come from the Weizmann Institute!
+				</section>
+
+<!--
+				<section>
+					 Charge measurement
+					 Noise
+
+		
+
+				</section>
+
+				-->
+
+				<section>
+					<section>
+					<h2> Point Contact Tunneling </h2>
+					<img src= "images/qpc_tunneling.png">
+					Universal Conductance Scaling: $G \sim T^{2g-2}$
+					</section>
+					<section>
+					<h2> $g$ Raising Effects </h2>
+
+<ul>
+<li>Dissipation</li> <li> Coulomb Repulsion </li><li> Edge Reconstruction  </li> </ul> <br>
+
+
+					<b>Experimental g gives upper bound on theoretical g. </b>
+
+</section>
+					<section>
+						
+			
+					
+					<img src="images/tunnelling_fit_baer.png"><br>
+					<ul>
+
+					<li>Baer et al. 2014  </li>
+					<li> Lin et. al. 2012 </li>
+					<li> Radu et. al. 2008 </li>
+					</ul>
+
+					<aside class="notes"> assuming e/4 we can see the center there </aside> 
+					
+					</section>
+
+					
+
+				
+				</section>
+				 <!-- Bosonization -->
+
+
+				<section>
+					<h2> Upstream Neutral Mode </h2>
+					<img src="images/neatural_mode_diagram.png" width="400px">
+					<!-- Maybe don't include plot -->
+					<!--<img src="images/noise_upstream.png">-->
+					<br>
+
+					<aside class="notes"> Can be though of as dipole modes."</aside>	
+					Bid, Ofek, et. al. 2010
+					<!--Expected to be slower than charge modes -->
+
 
 
 				</section>
+<!-- i know almost nothing about this one -->
+				
+				<!--
+
+				<section>
+				
+					Spin Polarization
+					Tilted Field 
+
+
+				</section>
+				-->
+
+
+				<section>
+				<h3> Interferometry </h3>
+				Fabry-Perot <br>
+				<aside class="notes"> even odd effect. If even # of quasi particles interference. If odd, no interference </aside>
+				<img src="images/fabry_perot.png"> <br>
+				Mach-Zehnder <br>
+				<img src="images/Mach_zehnder.png"> <br>
+				
+				Competing effects and experiments difficult.
+
+<!--
+				<h3> Numerics </h3>
+				Supports Pfaffian or PH-Pfaffian
+				-->
+				</section>
+
+					
+
+
+				
+
+				<!-- THings have been brewign in another corner -->
+				<section>
+				<h2> Composite Dirac Fermions </h2>
+				<a href ="https://arxiv.org/abs/1502.03446">D.T. Son (2015) </a> <br>
+				$\nu = 1/2$ correspond to no field on the composite fermions
+				
+			    Spin-Locked Dirac Cone <br>
+				Spin is dipole of paired semions. (Senthil and Wang)<br>
+				<img src="images/composite_fermion.png"> <br>
+				Recent Numerical Support (Geraedts et. al. 2016)
+
+				<aside class="notes"> 
+				Son Considers mappings between relativstic QH like in graphene
+				Dirac cone is like top of topological insualtor
+
+				 lack of $2k_f$  backscattering
+				 </aside>
+
+				<!--
+				Plus minus charge. Makes sense. Such a system travels in straight lines classically.
+				
+				PH-symmettry confusion
+				Dam Son's proposal
+				Where does vorticity go?
+				-->
+
+
+				<!-- not sure I should go here. HLR -->
+
+
+				</section>
+
+				<section>
+					<h2> PH-conjugation </h2>
+					Anti-unitary operator that takes empty to full
+					$$\nu \rightarrow 1- \nu$$ 
+					Thermal Conductance
+					$k \rightarrow \frac{\pi^2 k_B^2 T}{3h} - k$ <br>
+					PH-Symmetry requires: <br>
+					<ul>
+					<li>
+					$\nu = 1/2$  </li><li>
+					$ k = \frac{\pi^2 k_B^2 T}{6h} $ </li></ul>
+
+				</section>
+
+		
+
+				
+
+
+
+
+
+				<section>
 					<section>
+						
+					
 
 					<h2>A new state: PH-Pfaffian </h2> <br>
 					Mentioned in <a href ="https://arxiv.org/abs/1502.03446">D.T. Son (2016) </a>
 					<br>
 					$l=0$ cooper pairing <br>
 					Thermal and Electric Hall Conductance restrict Edge theory 
-					<!--One downstream charged bosonic mode, one upstream neutral majorana mode -->
+					</section>
+					<section>
+					<h2> Bulk-Boundary Correspondence</h2>					
+					CFT Wavefunction Conjecture<br>
+					Edge is described by CFT<br>
+					Correlation functions of the electron operators $O_e(z)$ on the edge give the wavefunction in the bulk
+					$$\psi = &ltO_e(z_1)O_e(z_2)O_e(z_3)O_e(z_4)...> $$
+
+
+				</section>
+
+					<section>
+							<h2> Edge Thoery </h2>
 					$$ L = -\frac{2}{4\pi} [\partial_t \phi \partial_x \phi + v_c (\partial_x \phi)^2 ]+ i\psi (\partial_t-v_n \partial_x) \psi $$
-					$\psi(\{z_i\}) \approx Pf(\frac {1}{\bar{z}_i - \bar{z}_j}) \prod_{i < j} (z_i-z_j)^2 $
-				</section>
-				<!--
-				<section>
-					Thermal And Hall Conductance
-					Both are topological properties
-					<ul>
-					<li> Hall conductance restricts Bosonic Charged Mode </li>
-					<li> Thermal k $\sim$  $\frac{\pi^2 k_B^2 T}{3h} $  $\sum$ # Bosons + $\frac{1}{2}\sum$ #Majorana </li>
-					</ul>
+					$\psi(\{z_i\}) \approx P_{LLL} Pf(\frac {1}{\bar{z}_i - \bar{z}_j}) \prod_{i < j} (z_i-z_j)^2 $
+
+					</section>
+					<aside class="notes"> 
+					Quite similar to pfaffian
+					One has to be careful with things. z bar needs to be projected 
+					</aside>
+					<!--One downstream charged bosonic mode, one upstream neutral majorana mode -->
 
 				</section>
 
-				<section>
-					PH-conjugation
-					$$\nu \rightarrow 1- \nu$$ 
-					$$k \rightarrow \frac{\pi^2 k_B^2 T}{3h} - k$$
-					PH-Symmetry requires
-					$$\nu =1/2$$ 
-					$$ k = \frac{\pi^2 k_B^2 T}{6h}$$ 
-					
 
+
+				<section>
+				<ul>
+				<li> e/4 &#10004; </li>
+				 <li>Spin-Polarized &#10004; </li>
+				<li> Neutral Mode &#10004; </li>
+				 <li> Tunneling Exponent &#10004; </li>
+				</ul>
 
 				</section>
-				-->
+
+
 
 				<section>
 
-				<h2>Experimental Signatures: </h2>
+				<h2>Other Experimental Signatures: </h2>
 				<ul> 
 				<li>Fabry-Perot - Indistinguishable from Pf </li>
 				<li> Mach-Zehnder: <ul>
-				  <li>Current - No dependence on flux </li>
-				<li>Noise - High dependence on flux </li>
+				  <li>Current - No dependence on flux. </li>
+				<li>Enhanced Noise. Under ideal conditions divergent
+				$$e^* = \frac{e}{1-\cos(2\pi\phi/\phi_0 + 4\gamma)} $$
+				<!--
+				$$e^* = \frac{e}{8} \frac{2-s^2}{1-s^2+\frac{s^4}{8}(1-\cos(2\pi\phi/\phi_0 + 4\gamma))}
+				--> 
+
+				 </li>
 				
 				</ul>
 				</li>
@@ -138,10 +562,9 @@
 				<section>
 				<h2> Takeaway</h2>
 				<ul>
-				<li>Still a lot unsaid after ~30 years. </li>
+				<li>Still a lot to discover after ~30 years. </li>
 				<li>Experiments do restrict possible states significantly </li>
 				<li> PH-Pfaffian and 113 leading candidates 
-				<li> Systematic Classification of $\nu = 5/2$? </li>
 				<br>
 				<h2 align="center"> Thank you </h2>
 				</section>
